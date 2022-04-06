@@ -71,27 +71,21 @@ exp.listen(port, () => {
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron')
 const { autoUpdater } = require("electron-updater")
-// const path = require('path')
 
 let win
 
 function createWindow() {
   // Create the browser window.
   win = new BrowserWindow({
-    // width: 600,
-    // height: 700,
     webPreferences: {
       devTools: false,
       preload: path.join(__dirname, 'preload.js')
     }
   })
 
-  // and load the index.html of the app.
+  // and load the index of the app.
   win.loadURL(`http://localhost:${port}`)
   win.setMenuBarVisibility(false)
-
-  // Open the DevTools.
-  // win.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
