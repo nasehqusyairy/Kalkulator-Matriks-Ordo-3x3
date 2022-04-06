@@ -1,0 +1,43 @@
+{
+  "name": "kalkulator_matriks_3x3",
+  "version": "1.1.0",
+  "description": "Operasi matriks sederhana 3x3",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Mohammad Nasyikh Al-Qusyairy & Dzulfikar Al Ghozali",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "electron-updater": "^4.6.5",
+    "express": "^4.17.3",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "electron": "^17.2.0",
+    "electron-builder": "^22.14.13",
+    "electron-log": "^4.4.6"
+  },
+  "build": {
+    "appId": "com.kalkulatorMatrikx3x3.app",
+    "productName": "Kalkulator Matriks Ordo 3x3",
+    "target": "NSIS",
+    "icon": "build/maths.ico",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "nasehqusyairy",
+        "repo": "Kalkulator-Matriks-Ordo-3x3"
+      }
+    ],
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "installerIcon": "build/maths.ico",
+      "installerLanguages": "en_US"
+    }
+  }
+}

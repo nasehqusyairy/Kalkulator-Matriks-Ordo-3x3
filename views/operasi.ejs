@@ -1,0 +1,117 @@
+<form class="row matrix">
+  <div class="col-12 col-lg-4">
+    <div class="card mb-3 shadow">
+      <div class="card-header text-center">
+        Matriks (A)
+      </div>
+      <div class="card-body">
+        <div class="input-group input-group-lg">
+          <input ondblclick="detail(this.value,'A',1,1)" class="form-control">
+          <input ondblclick="detail(this.value,'A',1,2)" class="form-control">
+          <input ondblclick="detail(this.value,'A',1,3)" class="form-control">
+        </div>
+        <div class="input-group input-group-lg">
+          <input ondblclick="detail(this.value,'A',2,1)" class="form-control">
+          <input ondblclick="detail(this.value,'A',2,2)" class="form-control">
+          <input ondblclick="detail(this.value,'A',2,3)" class="form-control">
+        </div>
+        <div class="input-group input-group-lg">
+          <input ondblclick="detail(this.value,'A',3,1)" class="form-control">
+          <input ondblclick="detail(this.value,'A',3,2)" class="form-control">
+          <input ondblclick="detail(this.value,'A',3,3)" class="form-control">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mb-3 col-lg-4">
+    <div class="card shadow">
+      <div class="card-header text-center">
+        Matriks (B)
+      </div>
+      <div class="card-body">
+        <div class="input-group input-group-lg">
+          <input ondblclick="detail(this.value,'B',1,1)" class="form-control">
+          <input ondblclick="detail(this.value,'B',1,2)" class="form-control">
+          <input ondblclick="detail(this.value,'B',1,3)" class="form-control">
+        </div>
+        <div class="input-group input-group-lg">
+          <input ondblclick="detail(this.value,'B',2,1)" class="form-control">
+          <input ondblclick="detail(this.value,'B',2,2)" class="form-control">
+          <input ondblclick="detail(this.value,'B',2,3)" class="form-control">
+        </div>
+        <div class="input-group input-group-lg">
+          <input ondblclick="detail(this.value,'B',3,1)" class="form-control">
+          <input ondblclick="detail(this.value,'B',3,2)" class="form-control">
+          <input ondblclick="detail(this.value,'B',3,3)" class="form-control">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 mb-3 col-lg-4">
+    <div class="card shadow">
+      <div class="card-header text-center">
+        Hasil
+      </div>
+      <div class="card-body">
+        <div class="input-group input-group-lg">
+          <input readonly ondblclick="detail(this.value,'Hasil',1,1)" class="form-control">
+          <input readonly ondblclick="detail(this.value,'Hasil',1,2)" class="form-control">
+          <input readonly ondblclick="detail(this.value,'Hasil',1,3)" class="form-control">
+        </div>
+        <div class="input-group input-group-lg">
+          <input readonly ondblclick="detail(this.value,'Hasil',2,1)" class="form-control">
+          <input readonly ondblclick="detail(this.value,'Hasil',2,2)" class="form-control">
+          <input readonly ondblclick="detail(this.value,'Hasil',2,3)" class="form-control">
+        </div>
+        <div class="input-group input-group-lg">
+          <input readonly ondblclick="detail(this.value,'Hasil',3,1)" class="form-control">
+          <input readonly ondblclick="detail(this.value,'Hasil',3,2)" class="form-control">
+          <input readonly ondblclick="detail(this.value,'Hasil',3,3)" class="form-control">
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<!-- Modal -->
+<div class="modal fade" id="detail">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detail sel</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Matriks</td>
+              <td>:</td>
+              <td id="matrix"></td>
+            </tr>
+            <tr>
+              <td>Nilai</td>
+              <td>:</td>
+              <td id="value"></td>
+            </tr>
+            <tr>
+              <td>Baris</td>
+              <td>:</td>
+              <td id="row"></td>
+            </tr>
+            <tr>
+              <td>Kolom</td>
+              <td>:</td>
+              <td id="col"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>

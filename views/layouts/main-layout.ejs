@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Icon -->
+  <link rel="shortcut icon" href="../img/maths.png" type="image/x-icon">
+
+  <title>
+    Kalkulator Matriks Ordo 3x3 - <%= title %>
+  </title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" href="/">Kalkulator Matriks 3x3</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/penjumlahan">Penjumlahan</a>
+          <a class="nav-link" href="/pengurangan">Pengurangan</a>
+          <a class="nav-link" href="perkalian">Perkalian</a>
+          <a class="nav-link" href="/determinan">Determinan</a>
+          <a class="nav-link" href="/inverse">Inverse</a>
+          <a class="btn btn-secondary ml-0 ml-lg-1 mb-1 mb-lg-0" href="#" onclick="clearMatrix()">Reset</a>
+          <a class="btn btn-primary ml-0 ml-lg-2" href="#" onclick="hitung(<%=method %>)">Hitung</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="text-center mt-5 mb-3">
+        <h1 class="text-primary">
+          <%= title %>
+        </h1>
+        <h5 class="text-secondary">Ordo 3x3</h5>
+      </div>
+      <%- body %>
+    </div>
+  </main>
+
+
+
+  <!-- JavaScript -->
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

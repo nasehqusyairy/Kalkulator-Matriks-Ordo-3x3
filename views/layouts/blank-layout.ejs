@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Icon -->
+  <link rel="shortcut icon" href="../img/maths.png" type="image/x-icon">
+
+  <title>
+    Kalkulator Matriks Ordo 3x3
+  </title>
+
+</head>
+
+<body>
+
+  <%- body %>
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script>
+      if (!sessionStorage.getItem('opened')) {
+        sessionStorage.setItem('opened', true)
+        setTimeout(() => {
+          $('.preload').fadeOut()
+        }, 3000);
+      } else {
+        $('.preload').hide()
+      }
+    </script>
+</body>
+
+</html>
